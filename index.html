@@ -10,6 +10,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<link rel="stylesheet" href="style.css">
 
 <body>
     <div class="statistics-btn">statistic</div>
@@ -18,17 +19,29 @@
     </div>
     <div class="container">
         <div class="watch-container">
-            <div class="watch">00:00</div>
+            <div class="watch">
+                <div class="watch-time centered">00:00
+                </div>
+            </div>
+            <div class="btn-container">
+                <button id="start-btn">Start</button>
+                <button id="stop-btn">Stop</button>
+                <button id="pause-btn">Pause</button>
+            </div>
         </div>
         <div class="todo">
             <div class="input-area">
-                <input type="text"> <button>ADD</button>
+                <input type="text"> <button class="add-btn">ADD</button>
             </div>
-            <div>
+            <div class="todo-list">
                 <ul>
-                    <li><span>1.</span> <span>kitap Oku</span></li>
-                    <li><span>2.</span> <span>Zipla</span></li>
-                    <li><span>3.</span> <span>Hopla</span></li>
+                    <li><span class="todo-number">1</span> <span class="todo-text">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.</span> <button class="delete-btn">&times;</button></li>
+                    <li><span class="todo-number">2</span> <span class="todo-text">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.</span> <button class="delete-btn">&times;</button></li>
+                    <li><span class="todo-number">3</span> <span class="todo-text">Lorem, ipsum dolor.</span> <button
+                            class="delete-btn">&times;</button></li>
+
                 </ul>
             </div>
         </div>
