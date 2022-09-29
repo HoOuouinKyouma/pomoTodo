@@ -1,0 +1,210 @@
+:root {
+    --color1: white;
+    --color2: #D9D9D9;
+    --color3: #F0F0F0;
+    --color4: #868686;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.watch-container {
+    background-color: var(--color2);
+    width: 500px;
+    height: 240px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.watch {
+    background-color: var(--color3);
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    border-radius: inherit;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.watch .watch-time {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+.btn-container {
+    text-align: center;
+    margin: 12px 0px;
+}
+
+.btn-container button {
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: .3s;
+
+}
+
+.btn-container button:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+
+.input-area {
+    background-color: var(--color4);
+    border-radius: 24px 24px 0px 0px;
+    height: 38px;
+    /* text-align: center; */
+}
+
+.input-area input {
+    padding: 2px;
+    margin: 10px 16px;
+    width: 75%;
+    background-color: var(--color3);
+    outline: none;
+    border: none;
+
+}
+
+.input-area .add-btn {
+    width: 17%;
+    --h: 1.4em;
+    /* the height */
+
+    line-height: var(--h);
+    color: #0000;
+    overflow: hidden;
+    text-shadow:
+        0 var(--_t, var(--h)) rgb(0, 0, 0),
+        0 0 var(--_c, rgb(255, 255, 255));
+    background:
+        linear-gradient(var(--color3) 0 0) bottom/100% var(--_d, 0) no-repeat;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.input-area .add-btn:hover {
+    --_d: 100%;
+    --_t: 0;
+    --_c: #0000;
+}
+
+
+.todo-list {
+    background-color: var(--color2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.todo-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 16px;
+}
+
+.todo-list li {
+    padding: 3px;
+    transition: .4s;
+}
+
+.todo-list li:hover {
+    background-color: #777777;
+}
+
+.todo-list .todo-number {
+    background-color: var(--color1);
+    padding: 5px 10px;
+}
+
+.todo-list .todo-text {
+    display: inline-block;
+    background-color: var(--color1);
+    padding: 5px 10px;
+    width: 88%;
+}
+
+.todo-list .delete-btn {
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 100;
+    padding: 7px 10px;
+    margin-left: 5px;
+}
+
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.statistics-btn {
+    overflow: hidden;
+    position: absolute;
+    /* color: red; */
+    padding: 10px 30px;
+    top: 60px;
+    right: -90px;
+    background-color: var(--color2);
+    border-radius: 24px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.statistics-btn:hover {
+    background-color: var(--color4);
+    color: white;
+    right: -20px;
+}
+
+.setting-btn {
+    position: absolute;
+    font-size: 2rem;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.setting-btn:hover {
+    color: var(--color4);
+    font-size: 3rem;
+}
